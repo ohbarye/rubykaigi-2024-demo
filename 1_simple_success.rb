@@ -17,7 +17,8 @@ end
 # end
 
 # Property based testing
-Pbt.assert do
+# Try with `worker: :ractor, :thread, :process`.
+Pbt.assert(worker: :ractor) do
   Pbt.property(Pbt.array(Pbt.integer)) do |numbers|
     result = sort(numbers)
     result.each_cons(2) do |x, y|

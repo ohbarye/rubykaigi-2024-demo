@@ -9,10 +9,9 @@ def sort(array)
   sort(left) + [pivot] + sort(right)
 end
 
-# Try with `seed: xxx`.
 # Try with `verbose: true`.
-# Try with `worker: :ractor, :thread, :process`.
-Pbt.assert do
+# Try with `seed: xxx`.
+Pbt.assert(verbose: true) do
   Pbt.property(Pbt.array(Pbt.integer)) do |numbers|
     result = sort(numbers)
     result.each_cons(2) do |x, y|

@@ -10,7 +10,7 @@ GEM
     parser (3.3.1.0)
       ast (~> 2.4.1)
       racc
-    pbt (0.4.0)
+    pbt (0.4.1)
     racc (1.7.3)
     rainbow (3.1.1)
     regexp_parser (2.9.0)
@@ -64,7 +64,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pbt (= 0.4.0)
+  pbt (= 0.4.1)
   rspec
   standard
 

@@ -2,4 +2,4 @@ source "https://rubygems.org"
 
 gem "standard"
 gem "rspec"
-gem "pbt", "0.4.0"
+gem "pbt", "0.4.1"
